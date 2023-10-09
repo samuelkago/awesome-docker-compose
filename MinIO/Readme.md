@@ -16,8 +16,9 @@ Before you begin, ensure you have the following prerequisites installed on your 
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/minio-docker-compose.git
-   cd minio-docker-compose
+   git clone https://github.com/samuelkago/awesome-docker-compose.git
+
+   cd MinIO
    ```
 
 2. Customize the Minio configuration (optional):
