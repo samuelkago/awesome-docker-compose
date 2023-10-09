@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3.9.4-management
+    ports:
+      - 5672:5672   # RabbitMQ main port
+      - 15672:15672 # RabbitMQ management UI port
+    volumes:
+      - ./rabbitmq:/var/lib/rabbitmq
+    environment:
+      - RABBITMQ_DEFAULT_USER=my_secret_username
+      - RABBITMQ_DEFAULT_PASS=stong_secret_password
