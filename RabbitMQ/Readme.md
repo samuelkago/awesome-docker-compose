@@ -51,8 +51,8 @@ By default, the `docker-compose.yml` file uses the following configuration:
 - RabbitMQ container name: `rabbitmq`
 - RabbitMQ management interface port: `15672`
 - RabbitMQ default credentials:
-  - Username: `guest`
-  - Password: `guest`
+  - Username: `my_secret_username`
+  - Password: `stong_secret_password`
 
 You can modify these values by editing the `docker-compose.yml` file to suit your requirements. For production use, it is essential to set secure credentials and adjust other configuration settings as needed.
 
