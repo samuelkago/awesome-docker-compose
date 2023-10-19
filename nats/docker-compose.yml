@@ -1,0 +1,22 @@
+services:
+  nats_1:
+    image: nats
+    command: -c /etc/my-server.conf --name nats_1 -p 4222
+    volumes:
+      - ./server.conf:/etc/my-server.conf
+    ports:
+      - 4222:4222
+  nats_2:
+    image: nats
+    command: -c /etc/my-server.conf --name nats_2 -p 4223
+    volumes:
+      - ./server.conf:/etc/my-server.conf
+    ports:
+      - 4223:4223
+  nats_3:
+    image: nats
+    command: -c /etc/my-server.conf --name nats_3 -p 4224
+    volumes:
+      - ./server.conf:/etc/my-server.conf
+    ports:
+      - 4224:4224
